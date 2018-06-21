@@ -114,8 +114,20 @@ section .row{
 .sidebar{
 	background-color: #EEEEEE;
 }
-.sidebar .widget{
-	border-bottom: 2px solid #e4e4e4;
+.widget_title{
+	font-weight:bold;
+	text-align:center;
+	background-color:#DDDDDD;
+	height:40px;
+	line-height:40px;
+	border-radius:8px;
+}
+.widget ul{
+	list-style:none;
+	text-align:center;
+}
+.widget li a{	
+	color:#999999;
 }
 .sidebar .widget .tagcloud{
 	padding-bottom: 20px;

@@ -23,7 +23,7 @@ function mt_widgets(){
 		'name' => 'Sidebar Lateral',
 		'id' => 'mt_sidebar',
 		'description' => 'Sidebar Lateral',
-		'before_widget' => '<div id="%1$s" class="widget %2$s>"',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widget_title">',
 		'after_title' => '</h4>'
@@ -33,7 +33,7 @@ function mt_widgets(){
 		'name' => 'Sidebar Rodapé',
 		'id' => 'mt_footersidebar',
 		'description' => 'Sidebar Rodapé',
-		'before_widget' => '<div id="%1$s" class="widget %2$s>"',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widget_title">',
 		'after_title' => '</h4>'
