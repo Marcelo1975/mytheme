@@ -10,7 +10,8 @@ function mt_social_customizer( $wp_customize ){
 	// Sections
 	$wp_customize->add_section('mt_social_section', array(
 		'title' => 'Rede Sociais',
-		'priority' => '1'
+		'priority' => '1',
+		'panel' => 'opcoes'
 	));
 	// Controllers
 	$wp_customize->add_control(

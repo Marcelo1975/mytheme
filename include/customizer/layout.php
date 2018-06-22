@@ -8,7 +8,8 @@ function mt_layout_customizer( $wp_customize ){
 	// Sections
 	$wp_customize->add_section('mt_layout_section', array(
 		'title' => 'Opções de Layout',
-		'priority' => 2
+		'priority' => 2,
+		'panel' => 'opcoes'
 	));
 
 	// Controllers
