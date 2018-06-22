@@ -6,6 +6,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<header>
+		<?php if(get_theme_mod('mt_topmenu_show') == 'yes'): ?>
 		<div class="top_header">
 			<nav class="navbar navbar-default">
 				<div class="container">
@@ -31,6 +32,7 @@
 				</div>
 			</nav>
 		</div>
+		<?php endif; ?>
 		<div class="main_header">
 			<div class="container">
 				<div class="logo">
@@ -53,7 +55,10 @@
 						}
 						?>
 						<div class="search_area">
-							<?php get_search_form(); ?>
+							<?php if(get_theme_mod('mt_search_show') == 'yes'){
+								get_search_form(); 
+							}
+							?>
 						</div>
 					</div>
 					<div class="main_info">
@@ -82,21 +87,36 @@
 									SIGA:
 								</div>
 								<div class="socialicons">
-									<a target="_blank" href="https://facebook.com">
-										<img src="<?php echo get_template_directory_uri().'/assets/images/facebook.png' ?>" />
-									</a>
-									<a target="_blank" href="https://google.com">
-										<img src="<?php echo get_template_directory_uri().'/assets/images/gplus.png' ?>" />
-									</a>
-									<a target="_blank" href="https://instagram.com">
-										<img src="<?php echo get_template_directory_uri().'/assets/images/instagram.png' ?>" />
-									</a>
-									<a target="_blank" href="https://twitter.com">
-										<img src="<?php echo get_template_directory_uri().'/assets/images/twitter.png' ?>" />
-									</a>
-									<a target="_blank" href="https://youtube.com">
-										<img src="<?php echo get_template_directory_uri().'/assets/images/youtube.png' ?>" />
-									</a>
+									<?php if(get_theme_mod('mt_facebook')): ?>
+										<a target="_blank" href="<?php echo get_theme_mod('mt_facebook'); ?>">
+											<img src="<?php echo get_template_directory_uri().'/assets/images/facebook.png' ?>" />
+										</a>
+									<?php endif; ?>
+
+									<?php if(get_theme_mod('mt_googleplus')): ?>
+										<a target="_blank" href="<?php echo get_theme_mod('mt_googleplus'); ?>">
+											<img src="<?php echo get_template_directory_uri().'/assets/images/gplus.png' ?>" />
+										</a>
+									<?php endif; ?>
+
+									<?php if(get_theme_mod('mt_instagram')): ?>
+										<a target="_blank" href="<?php echo get_theme_mod('mt_instagram'); ?>">
+											<img src="<?php echo get_template_directory_uri().'/assets/images/instagram.png' ?>" />
+										</a>
+									<?php endif; ?>
+
+									<?php if(get_theme_mod('mt_twitter')): ?>
+										<a target="_blank" href="<?php echo get_theme_mod('mt_twitter'); ?>">
+											<img src="<?php echo get_template_directory_uri().'/assets/images/twitter.png' ?>" />
+										</a>
+									<?php endif; ?>
+
+									<?php if(get_theme_mod('mt_youtube')): ?>
+										<a target="_blank" href="<?php echo get_theme_mod('mt_youtube'); ?>">
+											<img src="<?php echo get_template_directory_uri().'/assets/images/youtube.png' ?>" />
+										</a>
+									<?php endif; ?>
+
 								</div>
 							</div>
 						</div>

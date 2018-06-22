@@ -10,7 +10,10 @@
 	</div>
 	<div class="main_footer">
 		<div class="main_footer_left">
-			&copy; Todos os direitos reservados
+			&copy; Todos os direitos reservados - 
+			<?php if(get_theme_mod('mt_privacy_url')): ?>
+				<a href="<?php the_permalink(get_theme_mod('mt_privacy_url')); ?>">Política de Privacidade</a>
+			<?php endif; ?>
 		</div>
 		<div class="main_footer_right">
 			Criado por M18web | <?php echo date('Y'); ?>
