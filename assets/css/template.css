@@ -27,6 +27,9 @@ body{
 	height: 235px;
 	background-color: #2d3034;
 }
+.custom_header img{
+	width:100%;
+}
 .logo{
 	height: 133px;
 }
@@ -267,6 +270,7 @@ footer{
 }
 .pag{
 	padding:20px;
+	clear:both;
 }
 .previous_pag{
 	float:left;
@@ -296,6 +300,16 @@ footer{
 	margin:0;
 	padding:0;
 	display:inline;
+}
+.load_more_button{
+	width:150px;
+	height:40px;
+	background-color:#3382b5;
+	color:#FFFFFF;
+	text-align:center;
+	cursor:pointer;
+	line-height:40px;
+	margin:auto;
 }
 /* Tablet Horizontal ou monitor menor 
 @media (min-width:992px) and (max-width:1199px){}

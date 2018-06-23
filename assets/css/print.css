@@ -1,0 +1,12 @@
+@media print{
+	header,
+	.sidebar,
+	.footer,
+	.footer_widgets,
+	.pag,
+	.comments_area,
+	.main_footer,
+	.post_content img{
+		display:none;
+	}
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
+	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 	<?php wp_head(); ?>
 </head>
@@ -133,3 +134,11 @@
 				</div>
 			</div>
 	</header>
+	
+	<div class="container">
+		<?php if(get_header_image()): ?>
+			<div class="custom_header">
+				<img src="<?php header_image(); ?>" />
+			</div>
+		<?php endif; ?>
+	</div>
